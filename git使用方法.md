@@ -2,9 +2,9 @@
 ---
 
 ### git 全局设置
-    git config --global user.name "meijieman"
-    git config --global user.email "1558667079@qq.com"
-    
+    git config --global user.name "xxxxxx"
+    git config --global user.email "xxxxxx@qq.com"
+ 
 ### 创建 git 仓库
     mkdir demo
     cd demo
