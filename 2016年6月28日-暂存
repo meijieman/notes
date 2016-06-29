@@ -20,3 +20,7 @@ https://github.com/pedrovgs/EffectiveAndroidUI/blob/master/app/src/main/java/com
 https://github.com/litesuits | litesuits (马天宇)
 http://www.jianshu.com/p/d9143a92ad94 | Fragment全解析系列（一）：那些年踩过的坑 - 简书
 http://m.blog.csdn.net/article/details?id=51746000 | 怎样防止App在后台运行，点击应用桌面图标重新启动？
+
+
+
+adb shell dumpsys meminfo com.hongfans.rearview
