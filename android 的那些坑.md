@@ -22,4 +22,6 @@
     view.setLayoutParams(params);
 ```
 
-2.
+2.当设置 activity 为横屏，添加 fragment（fragment 中添加可滑动的组件以便观察） 到该 activity 中，然后锁屏再解锁，会发现有两个 fragment
+
+设置 activity android:configChanges="keyboardHidden|orientation|screenSize"
