@@ -20,5 +20,5 @@
 ### 对于已有项目
     cd exist_repo
     git remote add orign https://git.oschina.net/meijieman/exist.git
-    git push -u orign master
+    git push -u origin master
    
