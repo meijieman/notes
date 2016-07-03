@@ -103,8 +103,8 @@ vim .vimrc
 :r $VIMRUNTIME/vimrc_example.vim
 保存后下次启动 vim,编辑器就有了语法高亮的功能.
 
-### 补全功能
-使用 CTRL + D 和 TAB 可以进行命令行补全
+
+
 
 
 
