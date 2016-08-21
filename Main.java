@@ -12,10 +12,9 @@ import java.io.OutputStream;
  */
 
 public class Main {
-
     public static void main(String[] args) throws IOException {
 
-        copyFile("/home/major/test");
+        copyFile("d:/as/as笔记");
     }
 
     private static void copyFile(String path) throws IOException {
@@ -24,18 +23,22 @@ public class Main {
             throw new IllegalArgumentException("文件路径非法");
         }
         if (root.isDirectory()) {
-            File copyRoot = new File(root.getParent(), "copy_" + root.getName());
+            File copyRoot =  new File(root.getParent(), "copy_" + root.getName());
             copyRoot.mkdir();
-            File[] files = copyRoot.listFiles();
+            File[] files = root.listFiles();
             for (File file : files) {
                 copyFile(file.getAbsolutePath());
             }
         } else {
-            copyFile1(path, "copy" + root.getName());
+            File parentFile = root.getParentFile();
+            //
+            File dst = new File(parentFile.getParent() + File.separator + "copy_" + parentFile.getName(), "copy_" + root.getName());
+            copyFile1(path, dst.getAbsolutePath());
         }
     }
 
     private static void copyFile1(String src, String dst) throws IOException {
+        System.out.println("------ src " + src + " dst " + dst);
         InputStream is = new FileInputStream(src);
         OutputStream os = new FileOutputStream(dst);
         int len;
