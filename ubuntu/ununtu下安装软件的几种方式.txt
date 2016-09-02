@@ -1,0 +1,13 @@
+1. deb 包的安装
+sudo dpkg -i *.deb
+
+2. 编译安装
+
+
+3. apt-get 安装
+sudo apt-get install 软件名
+
+4. 二进制包的安装
+
+5. rpm 包的安装
+

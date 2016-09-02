@@ -1,0 +1,16 @@
+在桌面新建一个文件,输入如下内容
+
+[Desktop Entry]
+Version=1.0
+Exec=/opt/as/android-studio/bin/studio.sh
+Terminal=false
+Icon=/opt/as/android-studio/bin/studio.png
+Type=Application
+Categories=Development
+Name[zh_CN]=AS
+
+
+保存后修改创建的文件,添加后缀 .desktop
+右键点击属性,勾选可执行
+
+

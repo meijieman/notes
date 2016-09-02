@@ -1,0 +1,25 @@
+获取 root 权限 sudo passwd root // 设置 root 密码
+打开具有root用户权限的资源管理器  sudo nautilus
+打开终端 alt + f2 输入 gnome-terminal
+
+
+挂载分区
+fdisk -l // 查看分区
+mount /dev/sda5 /media/d // 挂载 sda5 到 /media/d
+
+长按 super键(win键),显示所有快捷键
+
+mkdir 创建目录
+touch 创建空文件
+echo 创建带内容的文件
+rm -r 递归删除 -f 强制删除
+find 在文件习题哦搜索文件
+wc 统计文本中行数、字数、字符数
+grep 文本中查找字符串
+rmdir 删除空目录
+tree 树形显示目录
+
+
+
+
+

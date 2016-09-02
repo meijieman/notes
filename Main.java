@@ -1,4 +1,3 @@
-package com;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,6 +14,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+System.out.println("start");
         copyFile("/home/major/test");
     }
 
@@ -31,11 +31,16 @@ public class Main {
                 copyFile(file.getAbsolutePath());
             }
         } else {
-            copyFile1(path, "copy" + root.getName());
+            File file = new File(path);
+            File parentFile = file.getParentFile();
+            File dst = new File(parentFile.getParentFile(), "copy_" + parentFile.getName() + File.separator + "copy_" + file.getName());
+
+            copyFile1(path, dst.getAbsolutePath());
         }
     }
 
     private static void copyFile1(String src, String dst) throws IOException {
+ 	System.out.println("-- src " + src + "  dst " + dst);
         InputStream is = new FileInputStream(src);
         OutputStream os = new FileOutputStream(dst);
         int len;
