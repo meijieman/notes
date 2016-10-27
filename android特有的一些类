@@ -1,0 +1,22 @@
+
+1. 
+SimpleArrayMap<K, V>
+ArrayMap<K, V>
+
+ArrayMap 继承自 SimpleArrayMap 用于替代 HashMap
+
+SimpleArrayMap 是可以替代 ArrayMap 来使用的，区别只是 SimpleArrayMap 内部采用单纯的数组来实现，而 ArrayMap 中采用了 EntrySet 跟 KeySet 的结构，这样方便使用 Iterator 来数据的遍历获取。
+
+2.
+SparseArray<T>
+SparseArrayCompat<T>
+LongSpareArray<T>
+用来替代 HashMap
+
+
+3. 
+AtomicFile
+File 的辅助类，实现事务性原子操作
+
+4. 
+BigDecimal
