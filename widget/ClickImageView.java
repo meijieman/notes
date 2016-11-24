@@ -16,12 +16,11 @@ import android.widget.ImageView;
 public class ClickImageView extends ImageView {
 
     public static final float SCALE = 0.8f;
-    public static final int DURATION = 400;
+    public static final int DURATION = 200;
 
 
     private Animator mAnimatorIn;
     private Animator mAnimatorOut;
-    private Handler mHandler = new Handler();
 
     private ClickListener mListener;
 
@@ -60,25 +59,15 @@ public class ClickImageView extends ImageView {
         }
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        mAnimatorOut.end();
-                        mAnimatorIn.start();
-                    }
-                });
+                mAnimatorOut.end();
+                mAnimatorIn.start();
                 break;
             case MotionEvent.ACTION_MOVE:
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        mAnimatorIn.end();
-                        mAnimatorOut.start();
-                    }
-                });
+                mAnimatorIn.end();
+                mAnimatorOut.start();
                 if (mListener != null) {
                     mListener.onClick();
                 }
