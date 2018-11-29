@@ -1,0 +1,105 @@
+win10 
+
+shortcut
+
+Win键+S：激活Cortana
+Win键+D：显示桌面
+Win键+I：打开Windows 10设置
+Win键+X：打开高级用户功能
+
+Win+B：光标移至通知区域
+Win+Break：显示“系统属性”对话框
+
+Win键+Ctrl+D：创建一个新的虚拟桌面
+Win键+Ctrl+F4：关闭虚拟桌面
+Win键+Ctrl+左/右：切换虚拟桌面
+
+Win + shift + s  截图
+
+
+Alt+D： 定位到地址栏
+Ctrl+Shift+N 新建文件夹
+Ctrl+W 关闭当前窗口。
+Win+T 快速切换任务栏程序
+Win键+1/2/3：打开任务栏中固定的程序，1代表任务栏中第一个应用图标
+Win+B 快速定位系统托盘
+
+Ctrl+Shift+Esc 任务管理器
+
+Win键+Pause键 系统属性
+
+
+Win快捷键组合快捷键大全(Win7/8以及Win10通用)
+　　Win + ←：最大化窗口到左侧的屏幕上
+　　Win + →：最大化窗口到右侧的屏幕上
+　　Win+ ↑：最大化窗口
+　　Win+ ↓：最小化窗口
+　　Win+ SHIFT +↑：垂直拉伸窗口，宽度不变
+　　Win+ SHIFT +↓：垂直缩小窗口，宽度不变
+　　Win+SHIFT+←：将活动窗口移至左侧显示器 
+　　Win+SHIFT+→：将活动窗口移至右侧显示器
+    Win+ Home：最小化所有窗口，第二次键击恢复窗口
+
+
+	
+	
+	
+win10操作系统下重启电脑java环境变量失效的处理方法，去掉CLASSPATH最后的分号就好，JAVA_HOME后面不要加分号，path格式是竖着写的，这个和win7不一样，每行写一个path，path里面不需要分号，最后也不要。这里配置唯一的分号可能就是CLASSPATH中间那个分号，最后的分号统统不要。
+
+win10 idea，AS 中文输入法中文字不跟随光标
+ctrl+shift+a -> switch boot jdk -> 切换为安装的 jdk，不使用自带的 openjdk
+
+
+
+
+
+
+=================================
+PowerShell 创建多个目录
+1. 创建多级目录
+md -p main/java
+(也可以不添加 -p 参数)
+2. 创建多个同级目录
+mkdir main, dev, prod
+
+3. 创建多个多级目录
+mkdir -p main/java, dev/java, prod/java
+(cmd 创建多个目录是使用空格分隔)
+=================================
+查看文件(文件夹)被哪个进程使用
+
+1：打开任务管理器选择“性能”  
+2：单击下部的“资源监视器”  
+3：选择“CPU”，在下部可以看到“关联的句柄”搜索框  
+4：在该搜索框中输入要删除的文件名回车  
+
+在下面就会列出来占用该文件的进程名，右键该进程单击“结束进程”，OK，可以删除了
+=================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+反射框架
+implementation 'org.reflections:reflections:0.9.11'
+
+
+
+编译期注解
+运行期注解
+
+https://www.cnblogs.com/whoislcj/p/6168641.html
+
+
+root 手机，将应用之余 system/app ，取消 root，该应用是 sys app？
+
+

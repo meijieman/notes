@@ -1,4 +1,0 @@
-adb shell dumpsys meminfo com.hongfans.rearview  查看指定 app 的内存占用
-
-top | grep $包名
-
