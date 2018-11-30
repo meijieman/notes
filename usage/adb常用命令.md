@@ -142,7 +142,7 @@ adb shell procrank
 adb shell dumpsys meminfo com.android.launcher
 
 
------------------------
+-------------------------
 
 adb root
 
@@ -156,7 +156,17 @@ adb shell mount -o rw,remount -t ext4 /system
 
 
 
+-------------------------
+查看 keystore 的签名
+在 <java_home>\bin
+keytool -list -v -keystore D:\Desktop\app_key
+keytool -list -v -keystore E:\debug.keystore -storepass xxx(密匙)
 
+查看三方应用或是系统应用签名
+解压缩 apk 获取 CERT.RSA
+keytool -printcert -file META-INF/CERT.RSA
+
+-------------------------
 
 
 
