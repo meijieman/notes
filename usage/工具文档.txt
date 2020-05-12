@@ -20,6 +20,9 @@ http://www.mob.com/
 
 
 ---------------------
+* Gradle 各版本下载
+http://services.gradle.org/distributions/
+
 * Android Open Source Project
 https://source.android.com/
 
